@@ -10,7 +10,8 @@ using namespace std;
 
 int main() {
 
-	Odometer test1; //constructor that sets all values to 0
+	// constructor that sets distance and fuel efficiency to 0
+	Odometer test1; 
 
 	cout << "Initial Odometer: " << endl;
 	cout << "Miles Driven: " << test1.getMiles() << endl;

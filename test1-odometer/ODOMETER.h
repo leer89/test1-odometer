@@ -1,8 +1,9 @@
 #pragma once
 /*----------class Odometer-------------*/
-class Odometer {
-	double distance, fuelEfficiency;
 
+class Odometer {
+private:
+	double distance, fuelEfficiency;
 public:
 	Odometer(); //default constructor that setsmiles and fuel to 0
 	void resetMiles(); //member function to resetmiles

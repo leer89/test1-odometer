@@ -1,4 +1,5 @@
 
+#include "stdafx.h"
 #include "odometer.h"
 
 // constructor to set distance and full efficiency to 0
