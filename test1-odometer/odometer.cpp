@@ -1,31 +1,35 @@
 
 #include "odometer.h"
 
+// constructor to set distance and full efficiency to 0
 Odometer::Odometer() {
-	milesDriven = 0;
-	fuelEfficent = 0;
+	distance = 0;
+	fuelEfficiency = 0;
 };
 
+// reset odometer to 0
 void Odometer::resetMiles() {
-	milesDriven = 0;
+	distance = 0;
 }
 
-void Odometer::setFuelEfficent(double amount) {
-	fuelEfficent = amount;
+void Odometer::setFuelEfficiency(double amount) {
+	fuelEfficiency = amount;
 }
 
+// accepts miles driven and adds to odometer total
 void Odometer::addMiles(double miles) {
-	milesDriven += miles;
+	distance += miles;
 }
 
 double Odometer::getConsumption() {
-	return milesDriven / 10; //made up value of 10miles per gallon
+	return distance / 10; //made up value of 10miles per gallon
 }
 
 double Odometer::getMiles() {
-	return milesDriven;
+	return distance;
 }
 
-double Odometer::getFuelEfficent() {
-	return fuelEfficent;
+// returns number of gallons of gasoline
+double Odometer::getFuelEfficiency() {
+	return fuelEfficiency;
 }

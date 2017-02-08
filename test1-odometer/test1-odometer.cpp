@@ -14,7 +14,7 @@ int main() {
 
 	cout << "Initial Odometer: " << endl;
 	cout << "Miles Driven: " << test1.getMiles() << endl;
-	cout << "Fuel Efficency: " << test1.getFuelEfficent() << endl << endl;
+	cout << "Fuel Efficency: " << test1.getFuelEfficiency() << endl << endl;
 
 	cout << "Adding 54.5 miles to odometer" << endl;
 	test1.addMiles(54.5); //add 54.5 miles
