@@ -10,8 +10,12 @@ using namespace std;
 
 int main() {
 
+	int userMiles;
+
+	// constructor that sets distance and fuel efficiency to 0
 	Odometer test1;
 
+	cout << "\nCPSC 231 - Data Structures - Test 1 - Randy Lee & Michael Soper\n\n";
 	cout << "Initial Odometer: 0\nInitial Fuel Efficiency: 27 mpg" << endl;
 	cout << "Miles Driven: " << test1.getMiles() << endl;
 	cout << "Fuel Efficency: " << test1.getFuelEfficiency() << endl << endl;
@@ -33,4 +37,6 @@ int main() {
 	cout << "Reseting the odometer" << endl;
 	test1.resetMiles(); //reset miles
 	cout << "Miles Driven: " << test1.getMiles() << endl;
+
+	return 0;
 }
